@@ -108,11 +108,17 @@ ClickUntilImagesFound_Yes()
             Sleep(1000)
             SendClick(200, 503)
             Sleep(1000)
-            Send("{a down}") ; Hold "a" key down
 
-            Sleep(7500) ; Wait for 7.5 seconds
+            Send("{a down}") ; Hold "a" key down
+            Sleep(3000) ; Wait for 3 seconds
             Send("{a up}") ; Release "a" key
-            Sleep(1000)
+            Sleep(500)
+
+            Send("{w down}") ; Hold "w" key down
+            Sleep(5000) ; Wait for 5 seconds
+            Send("{w up}") ; Release "w" key
+            Sleep(500)
+
             SendClick(1078, 583)
             Sleep(1000)
             SendClick(964, 514)
@@ -139,8 +145,8 @@ ClickUntilImagesFound_Yes()
             Sleep(1000)
             SendClick(772, 749)
 
-						Sleep(1000)
-						SendClick(769, 761)
+			Sleep(1000)
+			SendClick(769, 761)
 
             Sleep(1000)
             SendClick(799, 219)
@@ -226,11 +232,17 @@ PromptForNumber() {
                 Sleep(1000)
                 SendClick(200, 503)
                 Sleep(1000)
-                Send("{a down}") ; Hold "a" key down
 
-                Sleep(7500) ; Wait for 7.5 seconds
+                Send("{a down}") ; Hold "a" key down
+                Sleep(3000) ; Wait for 3 seconds
                 Send("{a up}") ; Release "a" key
-                Sleep(1000)
+                Sleep(500)
+
+                Send("{w down}") ; Hold "w" key down
+                Sleep(5000) ; Wait for 5 seconds
+                Send("{w up}") ; Release "w" key
+                Sleep(500)
+
                 SendClick(1078, 583)
                 Sleep(1000)
                 SendClick(964, 514)
