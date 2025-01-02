@@ -107,7 +107,7 @@ ClickUntilImagesFound_Yes()
 
             Sleep(1000)
             SendClick(200, 503)
-            Sleep(1000)
+            Sleep(2000)
 
             Send("{a down}") ; Hold "a" key down
             Sleep(3000) ; Wait for 3 seconds
@@ -231,7 +231,7 @@ PromptForNumber() {
 
                 Sleep(1000)
                 SendClick(200, 503)
-                Sleep(1000)
+                Sleep(2000)
 
                 Send("{a down}") ; Hold "a" key down
                 Sleep(3000) ; Wait for 3 seconds
