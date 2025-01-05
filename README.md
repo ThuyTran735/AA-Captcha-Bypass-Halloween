@@ -4,7 +4,7 @@ Step 1: Go to: https://www.autohotkey.com/ and download v2.0 NOT v1.1. 
 
 Step 2: Go into settings and change your display to 1920 x 1080 and 100% scale. 
 
-Step 3: Download the macro from the github: https://github.com/ThuyTran735/AA-Captcha-Bypass-Christmas
+Step 3: Download the macro from the github: https://github.com/ThuyTran735/AA-Captcha-Bypass-Halloween/tree/main
 Once on the page, click the green “Code” button. Then click “Download ZIP”.
 
 Step 4 (VERY IMPORTANT): Extract the ZIP file. If you are unsure how to do this: https://youtu.be/0t6nHhk-ZcE?si=wCoFcI0SF5VYxL41
