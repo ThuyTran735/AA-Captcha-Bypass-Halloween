@@ -153,7 +153,7 @@ ClickUntilImagesFound_Return()
         else
         {
             ImageFound_reconnect()
-            if reconnect_check = 0 {
+            if reconnect_check == 0 {
                 Sleep(1000) ; Wait for 1 second before checking again
                 SendClick(770, 700)
                 Sleep(1000)
@@ -195,7 +195,7 @@ ClickUntilImagesFound_Yes()
         {
             return_check := 0
             ImageFound_reconnect()
-            if reconnect_check = 0 {
+            if reconnect_check == 0 {
                 if !ImagesFound_Yes() {
                     Sleep(1000) ; Wait for 1 second 
         
@@ -412,7 +412,7 @@ ImageFound_reconnect()
 {
     global ImagePath11
     global reconnect_check
-    ImageSearchResult11 := ImageSearch(&x11, &y11, 0, 0, 1920, 1080, "*50 " . ImagePath11)
+    ImageSearchResult11 := ImageSearch(&x11, &y11, 0, 0, 1920, 1080, "*10 " . ImagePath11)
     if (ImageSearchResult11 = 1)
     {
         Loop 5 {
@@ -457,13 +457,13 @@ Unit_Upgrade(num_key) {
         if (ImagesFound_Return_2()) {
             break
         }
-        if return_check = 1 {
+        if return_check == 1 {
             break
         }
         if (ImageFound_reconnect()) {
             break
         }
-        if reconnect_check = 1 {
+        if reconnect_check == 1 {
             break
         }
     }
@@ -480,13 +480,13 @@ Unit_Upgrade(num_key) {
         if (ImagesFound_Return_2()) {
             break
         }
-        if return_check = 1 {
+        if return_check == 1 {
             break
         }
         if (ImageFound_reconnect()) {
             break
         }
-        if reconnect_check = 1 {
+        if reconnect_check == 1 {
             break
         }
         Sleep(50) 
@@ -527,7 +527,7 @@ PromptForNumber() {
                 reconnect_check := 0
                 
                 ImageFound_reconnect()
-                if reconnect_check = 0 {
+                if reconnect_check == 0 {
                     Loop 3 {
                     ; Before starting the main script actions, move the mouse first
                     MouseMove(300, 300)
@@ -543,7 +543,7 @@ PromptForNumber() {
 
                     Sleep(1000)
                     ImageFound_reconnect()
-                    if reconnect_check = 0 {
+                    if reconnect_check == 0 {
                         Send("{a down}") ; Hold "a" key down
                         Sleep(3000) ; Wait for 3 seconds
                         Send("{a up}") ; Release "a" key
@@ -578,7 +578,7 @@ PromptForNumber() {
                         SendClick(787, 695)
 
                         ImageFound_reconnect()
-                        if reconnect_check = 0 {
+                        if reconnect_check == 0 {
                             Sleep(15000)
                             ClickUntilImagesFound_Yes()
                             Sleep(500)
@@ -638,7 +638,7 @@ PromptForNumber() {
                                     break
                                 }
                                 ImageFound_reconnect()
-                                if reconnect_check = 1 {
+                                if reconnect_check == 1 {
                                     break
                                 } else {
 				    break
