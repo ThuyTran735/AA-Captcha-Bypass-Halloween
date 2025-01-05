@@ -561,7 +561,6 @@ Unit_Upgrade(num_key) {
             break
         }
         if unit_placement_counter > 25 {
-            unit_placement_counter := 0
             break
         }
 	Sleep(150)
@@ -587,14 +586,14 @@ Unit_Upgrade(num_key) {
         if reconnect_check == 1 {
             break
         }
+        if unit_placement_counter > 25 {
+            unit_placement_counter := 0
+            break
+        }
         if (ImageFound_unit_maxed()) {
             Sleep(100)
-            SendClick(551, 356)
-            if unit_placement_counter > 25 {
-                unit_placement_counter := 0
-                break
-            }            
-        break
+            SendClick(551, 356)      
+            break
         }
     }
 }
