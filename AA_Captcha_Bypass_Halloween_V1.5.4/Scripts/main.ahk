@@ -515,8 +515,10 @@ ClickRandomly() {
     saved_xx := xx
     saved_yy := yy
 
-	SendClick(xx, yy) ; Click at the random coordinates
-	Sleep(100)
+	if !ImageFound_unit_maxed() {
+	    SendClick(xx, yy) ; Click at the random coordinates
+	    Sleep(100)
+	}
 	return [saved_xx, saved_yy]
 }
 
