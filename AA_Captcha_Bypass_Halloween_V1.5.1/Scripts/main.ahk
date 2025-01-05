@@ -637,13 +637,12 @@ PromptForNumber() {
                                     ; Break the loop after clicking
                                     break
                                 }
-                                Send("{Right down}")
-                                Sleep(500)
-                                Send("{Right up}")
                                 ImageFound_reconnect()
                                 if reconnect_check = 1 {
                                     break
-                                }
+                                } else {
+				    break
+				}
                             }
                             Sleep(3000)
 
