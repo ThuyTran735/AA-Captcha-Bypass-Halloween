@@ -230,7 +230,7 @@ ClickUntilImagesFound_Yes()
             
             Loop {     
                 ; Search for the color
-                if PixelSearch(&xxx, &yyy, 480, 300, 1440, 780, 0xA1FFFF, 5) {
+                if PixelSearch(&xxx, &yyy, 480, 300, 1440, 780, 0xA1FFFF, 10) {
                     ; If the color is found, move the mouse and right click
                     Loop 3 {
                         SendClick_R(xxx, yyy)
