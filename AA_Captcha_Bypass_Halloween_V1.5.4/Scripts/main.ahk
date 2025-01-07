@@ -284,7 +284,7 @@ ClickUntilImagesFound_Yes()
         
                     Sleep(1000)
                     SendClick(200, 503)
-                    Sleep(7000)
+                    Sleep(2500)
                     if !ImagesFound_Yes() {
                         Send("{a down}") ; Hold "a" key down
                         Sleep(3000) ; Wait for 3 seconds
@@ -337,7 +337,6 @@ ClickUntilImagesFound_Yes()
                 break
             }
         }
-        Sleep(1000)  ; Wait for 1 second before checking again
     }
 }
 
