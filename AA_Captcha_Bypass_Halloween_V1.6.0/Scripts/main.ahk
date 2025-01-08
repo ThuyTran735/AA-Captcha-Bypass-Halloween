@@ -14,7 +14,7 @@ main := Gui("+AlwaysOnTop", "Halloween Macro V1.6.0")
 main.Show("w300 h300 x1610 y0")
 StartButton := main.add("Button", "x10 y270 w100", "Start (Ctrl+F4)")
 StopButton := main.add("Button", "x120 y270 w100", "Stop (Ctrl+F3)")
-Label := main.add("Text", "x10 y250 w200", "Made By Thuy")
+main.add("Text", "x10 y250 w200", "Made By Thuy")
 
 StartButton.OnEvent("Click", (*) => Send("{Ctrl Down}{F4}{Ctrl Up}"))
 StopButton.OnEvent("Click", (*) => ExitApp())
