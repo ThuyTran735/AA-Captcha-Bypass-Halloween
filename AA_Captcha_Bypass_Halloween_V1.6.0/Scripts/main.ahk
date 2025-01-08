@@ -419,7 +419,7 @@ ImageFound_unit_maxed()
     else
     {
         SendClick(425, 676)
-        Sleep(2500)
+        Sleep(2000)
         return false
     }
 }
