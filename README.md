@@ -22,7 +22,7 @@
 
 ### Step 6
 - Open your newly extracted folder. Click "Scripts".
-- Run "main". If that doesn’t work, run it as an Administrator. Do not click on "scan_text".
+- Run "main,ahk". If that doesn’t work, run it as an Administrator. Do not click on "scan_text.ahk" or "test.ahk".
 
 ### Step 7
 - Open Roblox. Join an AA server and don't move your character or camera.
